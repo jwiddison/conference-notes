@@ -146,15 +146,34 @@ Also, it abstracts some of the animation away from you and automates it.
 
 ## GraphQL without GraphQL - Backend Agnostic GraphQL inspired Queries For Colocating Data Requests With Components - [Conor Hastings](https://twitter.com/stillconor)
 
-TODO
+What are the 5 design principles of GraphQL?
+1. Hierarchal
+1. Product-centric
+1. Strong typing
+1. Client-specified queries
+1. Introspective
+
+What is inherently appealing about GraphQL?
+- The query system is super powerful
+- You just get the data you want, nothing more
+- Less data is sent over the wire
+- Reduces the # of roundtrips back and forth to the server
+
+Can I just use parts of GraphQL?  What if I don't need to solve all of these problems?
+- There's not a strong business case for less data going over the wire
+- And there's a lot of drawbacks to using GraphQL.  Its heavy to setup and maintain
+
+Specifically can I just use the query system from my UI
+- KIND OF!
+- [RouteQL](https://github.com/conorhastings/routeql) - Kind of like the GraphQL without the GraphQL.  Lets you use the query system without all the other stuff.
 
 ## Playing With Polyhedra: Creating Beauty from Obsession - [Nat Alison](https://twitter.com/tesseralis)
 
-TODO
+Not a lot of notes to take on the talk.  Pretty fascinating to see what Nat has done with charting libraries to render 3D shapes using react.
 
 ## Developing Immersive cross-platform AR and VR Apps using React-Native - [Pulkit Kakkar](https://twitter.com/pulkitkkr0)
 
-TODO
+Also an interesting case study of what you can do with AR/VR & React Native.  Not a ton of notes to take.
 
 ## Beyond web-apps: React, JavaScript and WebAssembly to port legacy native apps - [Florian Rival](https://twitter.com/FlorianRival)
 
