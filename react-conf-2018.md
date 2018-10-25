@@ -1,10 +1,8 @@
-# React Conf 2018
+# React Conf 2018 - Thursday October 25, 2018
 
-## Thursday
+## React Today and Tomorrow - [Sophie Alpert](https://twitter.com/sophiebits) & [Dan Abramov](https://twitter.com/dan_abramov)
 
-### React Today and Tomorrow - Sophie Alpert & Dan Abramov
-
-#### Sophie Alpert
+#### [Sophie Alpert](https://twitter.com/sophiebits)
 
 1.25 Million developers are using the react dev tools. It's growing like crazy. React just passed jQuery in google search trends.
 
@@ -16,7 +14,7 @@ React's mission is to make it easier to build great UIs. How they do this/focus 
   - They're working on time-slicing rendering
 1.  Developer tooling
 
-##### What in React still sucks?
+#### What in React still sucks?
 
 1. Reusing Logic
   - Higher-order components are gnarly
@@ -29,15 +27,13 @@ React's mission is to make it easier to build great UIs. How they do this/focus 
   - `this` binding is always confusing
   - Classes are both hard for humans and hard for computers.  It makes it hard to implement hot reloading reliably.
 
-#### Dan Abramov
+#### [Dan Abramov](https://twitter.com/dan_abramov)
 
 How do we fix those problems?  If you change one thing to make something better, it makes one of the other problems worse.
 
 The real problem is that React doesn't provide a _stateteful primitive_ simpler than a _class component_.
 
 React used to have mixins. You could share methods across classes fairly easily that way.  The problems that mixins create are worse than the problems that they solve.
-
-##### The proposal to fix the three problems mentioned above:
 
 They're introducing an opt-in, all net-new, so no breaking changes API
 
@@ -81,34 +77,62 @@ Check out the docs [here](https://reactjs.org/hooks)
 
 DON'T REWRITE YOUR COMPONENTS/APPS IN HOOKS.  It's still just a proposal / in alpha at this point.  Try and play with them, but DON'T re-write everything.
 
-### 90% Cleaner React - Ryan Florence
+## 90% Cleaner React - [Ryan Florence](https://twitter.com/ryanflorence)
 
 Ryan is going through demos of refactoring existing react components to use the new hooks.  Super interesting.  It really is 90% cleaner!
 
-### Building Todo The Game In A Cloud-Only Dev Environment - Christina Holland
+## Building Todo The Game In A Cloud-Only Dev Environment - [Christina Holland](https://twitter.com/americanwombat)
+
+A demo of how feasible it is to dev on a chrome book.  Moving all your dev environment stuff to AWS Cloud9.
+
+There are a few circumstances where this approach can be useful.  Not having your computer, having a crappy computer, teaching a class, etc.  Its useful in some contexts to have a cloud dev environment
+
+This is a really crappy setup if you don't have reliable internet, have a local dev environment, are picky about your dev environment.
+
+A pretty neat demo!
+
+## The path to a declaratively animated future - [Matt Perry](https://twitter.com/popmotionjs)
+
+Animations have traditionally been SUPER imperative.  Using a [library called POSE](https://popmotion.io/pose/) to try and make things feel more react-y and more declarative.
+
+Animations get a bad rap.  They get left for last, and are subservient to "does it work".
+
+CSS itself is already a pretty powerful declarative animation library.  However there are a handful things it doesn't do.  We need something that combines the simplicity of CSS syntax with the power of the things you can do in JavaScript.
+
+On the js side, you can do stuff like this:
+
+```js
+// You write posed components with styled components-like syntax
+const Button = posed.button({
+  hoverable: true,
+  initial: { scale: 1 },
+  hover: { scale: 1.2 }
+});
+
+// And then use them like normal
+<Button />
+```
+
+Pose has some pretty strong opinions about the orders of properties.  Transform an object before you translate it, for example.
+
+Also, it abstracts some of the animation away from you and automates it.  
+
+## GraphQL without GraphQL - Backend Agnostic GraphQL inspired Queries For Colocating Data Requests With Components - [Conor Hastings](https://twitter.com/stillconor)
 
 TODO
 
-### The path to a declaratively animated future - Matt Perry
+## Playing With Polyhedra: Creating Beauty from Obsession - [Nat Alison](https://twitter.com/tesseralis)
 
 TODO
 
-### GraphQL without GraphQL - Backend Agnostic GraphQL inspired Queries For Colocating Data Requests With Components - Conor Hastings
+## Developing Immersive cross-platform AR and VR Apps using React-Native - [Pulkit Kakkar](https://twitter.com/pulkitkkr0)
 
 TODO
 
-### Playing With Polyhedra: Creating Beauty from Obsession - Nat Alison
+## Beyond web-apps: React, JavaScript and WebAssembly to port legacy native apps - [Florian Rival](https://twitter.com/FlorianRival)
 
 TODO
 
-### Developing Immersive cross-platform AR and VR Apps using React-Native - Pulkit Kakkar
-
-TODO
-
-### Beyond web-apps: React, JavaScript and WebAssembly to port legacy native apps - Florian Rival
-
-TODO
-
-### React for social change - Rodrigo Quezada
+## React for social change - [Rodrigo Quezada](https://twitter.com/rodikana)
 
 TODO
