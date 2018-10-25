@@ -117,6 +117,33 @@ Pose has some pretty strong opinions about the orders of properties.  Transform 
 
 Also, it abstracts some of the animation away from you and automates it.  
 
+## ⚡️ Talks
+
+#### What's new in create-react-app V2
+- PostCSS
+- Sass and CSS Modules support out of the box!
+- Aaaand... a bunch of other stuff on the create react app blog
+- TypeScript support is coming TODAY!  Available as a cli option!
+
+#### Components as units of work
+- You can use components as more than just containers for presentation logic
+- They can be containers for abstracting other functionality too!
+
+#### 5 Animations You Should Know and Use
+- Hover - Makes something seem clickable.  Can make things seem important too.
+- Sticky (`position: fixed`).  Not sure this is an animation, but love it!
+- Loading animations
+- Sliding - translate x and y
+- Opacity - fade in / out
+
+#### Render Props + Pure Components maybe = problems??? (Not his actual title)
+- Dude moved FAST through his talk.  And it was a little tough for me to follow, honestly.  The post-lunch tired is starting to kick in.
+
+#### Better Living Through Git Hooks
+- The `.git` directory has a lot of cool things you didn't know about in it!
+- The `.git/hooks/` directory can be super useful for keeping things clean
+- She owns [thatpersonfromthething.com](https://thatpersonfromthething.com) and it redirects to her personal site.
+
 ## GraphQL without GraphQL - Backend Agnostic GraphQL inspired Queries For Colocating Data Requests With Components - [Conor Hastings](https://twitter.com/stillconor)
 
 TODO
