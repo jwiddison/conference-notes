@@ -48,8 +48,6 @@ It enables you to delete all the concepts of `isLoading` state that everyone use
 
 ## SVG Illustrations as React Components - [Elizabet Oliveira](https://twitter.com/miuki_miu)
 
-SVGs are great. They're scalable. They're XML-y. The file sizes are WAY smaller than regular images.
-
 To import an SVG as a react component, this is one way to do it:
 
 ```js
@@ -63,8 +61,36 @@ const LogoComponent = () => {
 
 BUT if you do convert to JSX, you can do code-splitting, make use of props, state, event handlers.
 
-A good example is her React Kawii project. [Here's the github](https://github.com/miukimiu/react-kawaii) and [Here's the docs](https://react-kawaii.now.sh/#/Components?id=icecream). A good showcase of how you can use props and stuff to customize SVGs and make really useful visual components.
+A good example is her React Kawii project. [Here's the GitHub](https://github.com/miukimiu/react-kawaii) and [Here's the docs](https://react-kawaii.now.sh/#/Components?id=icecream). A good showcase of how you can use props and stuff to customize SVGs and make really useful visual components.
 
 ## The Missing Abstraction of Charting - [Chris Trevino](https://twitter.com/darthtrevino)
 
+Chris works for Microsoft doing data stuff. He explained it but I dunno.
+
+Most of the charting libraries we end up using are pretty brittle. The options that you currently have are pretty crappy. Either a pretty primitive charting library that won't meet your requirements or building something from scratch. So what other options are there?
+
+There are some good libraries at this point that are popular with React. React-vis and stuff like that.
+
+Vega - a way of making data visualizations using JSON data. You configure and set it up with a bunch of JSON objects. Kinda like D3 so far. Instead of being a component-based charting library like most of the popular React charting library.
+
+Chris is making a library called Chart Parts. Still super experimental, so I can't link docs or anything in here. It's cool because it has a lot of support for visual parity on mobile devices.
+
+The rest of the talk was a walkthrough of how you're gonna be able to use his library.
+
 ## Elsa: AI Conversational Agent Aimed At Improving Mental Health For Women - [Damini Satya Kammakomati](https://twitter.com/Daminisatya)
+
+Damini was introduced as being "the last speaker before lunch". Most of the other people get really specific introductions.
+
+Elsa is trying to be a stand-in for the friends that people typically try to reach out to when they're struggling with mental health problems.
+
+Most of the existing mental health chat bots and stuff range from not-very-effective to actually counter-productive.
+
+## Block in the Main Thread - [James Long](https://twitter.com/jlongster)
+
+## React Native's New Architecture - [Parashuram N](https://twitter.com/nparashuram)
+
+## Let React speak your language - [Tomáš Ehrlich](https://twitter.com/tomas_ehrlich)
+
+## React for Designers with FramerX - [Thomas Aylott](https://twitter.com/subtlegradient)
+
+## Building a diverse and inclusive community - [Eyitayo Alimi](https://twitter.com/alimieyitayo)
