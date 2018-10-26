@@ -173,12 +173,18 @@ Not a lot of notes to take on the talk.  Pretty fascinating to see what Nat has 
 
 ## Developing Immersive cross-platform AR and VR Apps using React-Native - [Pulkit Kakkar](https://twitter.com/pulkitkkr0)
 
-Also an interesting case study of what you can do with AR/VR & React Native.  Not a ton of notes to take.
+Our brains can be tricked really easily with visual illusions.  Going through a history of how we've gotten to where we are with AR/VR.
+
+There's an experimental ARKit / ARCore for React Native that are still pre-alpha but they're pretty cool
+
+There's another library that is a little more robust called [Viro](https://viromedia.com/viroreact/)
 
 ## Beyond web-apps: React, JavaScript and WebAssembly to port legacy native apps - [Florian Rival](https://twitter.com/FlorianRival)
 
-TODO
+Interesting talk about building games.
 
 ## React for social change - [Rodrigo Quezada](https://twitter.com/rodikana)
 
-TODO
+Check out [prisma](https://www.prisma.io)
+
+Working with the government can be really hard. It tries your patience. But we can all do a lot of good with our skills and resources.
