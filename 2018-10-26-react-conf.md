@@ -85,12 +85,30 @@ Elsa is trying to be a stand-in for the friends that people typically try to rea
 
 Most of the existing mental health chat bots and stuff range from not-very-effective to actually counter-productive.
 
+## ⚡️ Talks
+
+### How to give good code reviews
+
+- Critique, don't criticize
+- Be kind
+- Remember, it's everyone's code, not YOUR code
+- Let your tools be the bad guy (for linting, style, etc.)
+- Don't be afraid to be wrong
+- Never just rubber-stamp approve a PR. Approach each PR with the same level of commitment
+- Writing code in an organization is a team sport. There is no "I" in CODE.
+
 ## Block in the Main Thread - [James Long](https://twitter.com/jlongster)
 
-## React Native's New Architecture - [Parashuram N](https://twitter.com/nparashuram)
+Interactions are really important to get right on mobile. It either makes the experience of using it delightful or really frustrating.
 
-## Let React speak your language - [Tomáš Ehrlich](https://twitter.com/tomas_ehrlich)
+The animations / interactions that you have access to with React Native have to be just as good as the native iOS an Android ones or it doesn't really work.
 
-## React for Designers with FramerX - [Thomas Aylott](https://twitter.com/subtlegradient)
+Async is like a virus that infects and it just spreads once it gets introduced to a system.
 
-## Building a diverse and inclusive community - [Eyitayo Alimi](https://twitter.com/alimieyitayo)
+Animations are going to just keep becoming more and more of a problem on higher-refresh-rate displays.
+
+Declarative animations are typically preferred to imperative animations.
+
+You can use the `onPanResponderMove` in React Native to try and combat the lag thats inherent with React Native.
+
+You basically wanna keep as much happening on the native side and not crossing over to the JavaScript side as much as you possibly can.
