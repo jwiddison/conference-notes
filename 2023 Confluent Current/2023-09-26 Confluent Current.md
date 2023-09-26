@@ -177,4 +177,24 @@ Because we can interact with Flink's "SQL" programatically you can go beyond the
 For example, making a table with 500 columns. Would suck in regualar SQL. Not a problem for flink.
 
 ### An Overview of Flink SQL Joins - David Anderson
+
+The primary risk with streaming joins is unbounded state retention.
+Best practice is to limit the bounded set of data you keep from one table.
+We could be more intentional wish using updating tables vs insert-only tables. We should use insert-only tables for all
+of our business events.
+You need to think about the semantics of what you want with joins. Do you want to enrich with data as they were when
+events occurred, or latest?
+Temporal Joins - suitable when we want to enrich an event exactly once with the appropriate information with information
+as it existed at the time the event occurred.
+Temporal joins can be idle if there's no data. So be intentional with your watermarking strategy.
+Can do things like this:
+```SQL
+for SYSTEM_TIME AS OF some_table.some_timestamp
+```
+And consider using a temporal join instead of unbounded regular joins.
+
 ### The AdaptiveScheduler, a New Default for Streaming - David Moravek
+
+AdaptiveScheduler will become available with Flink 1.18
+This guy was part of Immerok (the managed flink startup that Confluent acquired)
+(Had to run a little early to meet with Dominic from Confluent)
