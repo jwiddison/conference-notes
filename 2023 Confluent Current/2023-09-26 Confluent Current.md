@@ -2,7 +2,7 @@
 
 Tuesday September 26, 2023
 
-## Keynote - Jay Kreps (Confluent CEO)
+## Keynote
 
 Streams are really like a superset of batch processing.
 The same abstraction that streams are to batches, stream processing is to streams.
@@ -29,7 +29,7 @@ and create new business value.
 1. Governed -> Data is pure and trustworthy (We probably need to get better at this part of it)
 1. Processed -> Data is exponentially more valuable if you can mix it with other related data
 
-TODO: Read this: https://docs.confluent.io/cloud/current/stream-governance/index.html
+TODO: Read this: [Stream governance docs](https://docs.confluent.io/cloud/current/stream-governance/index.html)
 
 Julie Price - PM @ Confluent
 "Kora" -> Confluent's Kafka engine for the cloud
