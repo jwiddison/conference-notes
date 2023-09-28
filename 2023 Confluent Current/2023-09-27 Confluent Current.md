@@ -73,10 +73,14 @@ It's an entire API unto itself. You can use it to define your sources and sinks 
 
 ## A Trifecta of Real-Time Applications: Apache Kafka, Flink, and Druid
 
-<!-- ## 3:00 -->
-<!-- ## 3:30 -->
-<!-- ## 4:00 -->
-<!-- ## 4:30 -->
-<!-- ## 5:00  -->
-
-<!-- Flight boards at 6:45. Plan on 15 minutes for the uber. Need to be in the uber at 5:15 at the latest. -->
+[Apache Druid](https://druid.apache.org/) is a tool for piping your data from kafka into to do analytics queries on it.
+What is different about druid?
+- Sub-second queries at massive scale (trillions of rows).
+- High concurrency without having to throw more hardware to scale horizontally.
+- Incorporating real-time AND historical data. Has it's own "connector" ecosystem to project data into Druid directly
+from Kafka without needing to do the network hop to Kafka Connect.
+Druid is able to scale with increasing topic partitions automatically. They can add arbitrarily many more Ingestion
+Tasks. That's their "consumer" abstraction.
+Druid is kind of built like Flink where real-time data is the primary use case and they treat batch work as a special
+case of streaming.
+Fills a SIMILAR but not identical niche to things like Snowflake.
